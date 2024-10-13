@@ -1,0 +1,419 @@
+﻿@{
+	ViewData["Title"] = "RECRUITMENT PORTAL";
+	ViewData["Title2"] = "BFP MIMAROPA";
+	ViewData["Module"] = "Recruitment Portal";
+	KTTheme.AddVendors(new string[] { "amcharts", "amcharts-maps", "amcharts-stock" });
+
+	KTTheme.AddJavascriptFile("js/custom/Apply/Ledger.js");
+}
+
+<!--begin::Content-->
+<div id="kt_app_content" class="app-content flex-column-fluid">
+
+	<!--begin::Content container-->
+	<div id="kt_app_content_container" class="app-container container-xxl">
+		<!--begin::Stepper-->
+		<div class="stepper stepper-pills stepper-column d-flex flex-column flex-xl-row flex-row-fluid" id="kt_modal_create_app_stepper">
+
+			<!--begin::Aside-->
+			<div class="d-flex justify-content-center justify-content-xl-start flex-row-auto w-100 w-xl-300px">
+
+				<!--begin::Nav-->
+				<div class="stepper-nav ps-lg-10">
+
+					<!--begin::Step 1-->
+					<div class="stepper-item current" data-kt-stepper-element="nav">
+
+						<!--begin::Wrapper-->
+						<div class="stepper-wrapper">
+							<!--begin::Icon-->
+							<div class="stepper-icon w-40px h-40px">
+								<i class="ki-duotone ki-check stepper-check fs-2"></i>
+								<span class="stepper-number">1</span>
+							</div>
+							<!--end::Icon-->
+							<!--begin::Label-->
+							<div class="stepper-label">
+								<h3 class="stepper-title">Details</h3>
+								<div class="stepper-desc">Describe yourself</div>
+							</div>
+							<!--end::Label-->
+						</div>
+						<!--end::Wrapper-->
+						<!--begin::Line-->
+						<div class="stepper-line h-40px"></div>
+						<!--end::Line-->
+					</div>
+					<!--end::Step 1-->
+					<!--begin::Step 2-->
+					<div class="stepper-item" data-kt-stepper-element="nav">
+						<!--begin::Wrapper-->
+						<div class="stepper-wrapper">
+							<!--begin::Icon-->
+							<div class="stepper-icon w-40px h-40px">
+								<i class="ki-duotone ki-check stepper-check fs-2"></i>
+								<span class="stepper-number">2</span>
+							</div>
+							<!--begin::Icon-->
+							<!--begin::Label-->
+							<div class="stepper-label">
+								<h3 class="stepper-title">Address</h3>
+								<div class="stepper-desc">Define your address</div>
+							</div>
+							<!--begin::Label-->
+						</div>
+						<!--end::Wrapper-->
+						<!--begin::Line-->
+						<div class="stepper-line h-40px"></div>
+						<!--end::Line-->
+					</div>
+					<!--end::Step 2-->
+					<!--begin::Step 3-->
+					<div class="stepper-item" data-kt-stepper-element="nav">
+						<!--begin::Wrapper-->
+						<div class="stepper-wrapper">
+							<!--begin::Icon-->
+							<div class="stepper-icon w-40px h-40px">
+								<i class="ki-duotone ki-check stepper-check fs-2"></i>
+								<span class="stepper-number">3</span>
+							</div>
+							<!--end::Icon-->
+							<!--begin::Label-->
+							<div class="stepper-label">
+								<h3 class="stepper-title">Upload</h3>
+								<div class="stepper-desc">Upload necessary document</div>
+							</div>
+							<!--end::Label-->
+						</div>
+						<!--end::Wrapper-->
+						<!--begin::Line-->
+						<div class="stepper-line h-40px"></div>
+						<!--end::Line-->
+					</div>
+					<!--end::Step 3-->
+					<!--begin::Step 4-->
+					<div class="stepper-item mark-completed" data-kt-stepper-element="nav">
+						<!--begin::Wrapper-->
+						<div class="stepper-wrapper">
+							<!--begin::Icon-->
+							<div class="stepper-icon w-40px h-40px">
+								<i class="ki-duotone ki-check stepper-check fs-2"></i>
+								<span class="stepper-number">4</span>
+							</div>
+							<!--end::Icon-->
+							<!--begin::Label-->
+							<div class="stepper-label">
+								<h3 class="stepper-title">Completed</h3>
+								<div class="stepper-desc">Review and Submit</div>
+							</div>
+							<!--end::Label-->
+						</div>
+						<!--end::Wrapper-->
+					</div>
+					<!--end::Step 4-->
+				</div>
+				<!--end::Nav-->
+			</div>
+			<!--begin::Aside-->
+			<!--begin::Content-->
+			<div class="flex-row-fluid py-lg-5 px-lg-15">
+				<!--begin::Form-->
+				<form class="form" novalidate="novalidate" id="kt_modal_create_app_form">
+					<!--begin::Step 1-->
+					<div class="current" data-kt-stepper-element="content">
+						<div class="w-100">
+
+							<!--begin::Image Profile-->
+							<div class="mb-7">
+								<!--begin::Label-->
+								<label class="fs-6 fw-semibold mb-3">
+									<span>Upload Passport Size Photo Picture With Signature</span>
+									<span class="ms-1" data-bs-toggle="tooltip" title="Allowed file types: png, jpg, jpeg.">
+										<i class="ki-duotone ki-information fs-7">
+											<span class="path1"></span>
+											<span class="path2"></span>
+											<span class="path3"></span>
+										</i>
+									</span>
+								</label>
+								<!--end::Label-->
+								<!--begin::Image input wrapper-->
+								<div class="mt-1">
+
+									<!--begin::Image placeholder-->
+									<style>
+										.image-input-placeholder {
+											background-image: url('assets/media/svg/files/blank-image.svg');
+										}
+
+										[data-bs-theme="dark"] .image-input-placeholder {
+											background-image: url('assets/media/svg/files/blank-image-dark.svg');
+										}
+									</style>
+									<!--end::Image placeholder-->
+									<!--begin::Image input-->
+									<div class="image-input image-input-outline image-input-placeholder image-input-empty image-input-empty" data-kt-image-input="true">
+
+										<!--begin::Preview existing avatar-->
+										<div class="image-input-wrapper w-100px h-100px" style="background-image: url('')"></div>
+										<!--end::Preview existing avatar-->
+										<!--begin::Edit-->
+										<label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="change" data-bs-toggle="tooltip" title="Change avatar">
+											<i class="ki-duotone ki-pencil fs-7">
+												<span class="path1"></span>
+												<span class="path2"></span>
+											</i>
+											<!--begin::Inputs-->
+											<input type="file" name="avatar" accept=".png, .jpg, .jpeg" />
+											<input type="hidden" name="avatar_remove" />
+											<!--end::Inputs-->
+										</label>
+										<!--end::Edit-->
+										<!--begin::Cancel-->
+										<span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="cancel" data-bs-toggle="tooltip" title="Cancel avatar">
+											<i class="ki-duotone ki-cross fs-2">
+												<span class="path1"></span>
+												<span class="path2"></span>
+											</i>
+										</span>
+										<!--end::Cancel-->
+										<!--begin::Remove-->
+										<span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="remove" data-bs-toggle="tooltip" title="Remove avatar">
+											<i class="ki-duotone ki-cross fs-2">
+												<span class="path1"></span>
+												<span class="path2"></span>
+											</i>
+										</span>
+										<!--end::Remove-->
+
+									</div>
+									<!--end::Image input-->
+								</div>
+								<!--end::Image input wrapper-->
+							</div>
+							<!--end::Image Profile-->
+							<!--begin::Input group wrapper-->
+							<div class="d-flex flex-wrap">
+								<!--begin::Row 1-->
+								<div class="d-flex w-100 gap-5">
+									<!--begin::Input group 1-->
+									<div class="fv-row mb-10 flex-fill">
+										<label class="d-flex align-items-center fs-5 fw-semibold mb-2">
+											<span class="required">Last Name</span>
+											<span class="ms-1" data-bs-toggle="tooltip" title="Specify your last name">
+												<i class="ki-duotone ki-information-5 text-gray-500 fs-6"></i>
+											</span>
+										</label>
+										<input type="text" class="form-control form-control-lg form-control-solid" name="last-name" placeholder=""
+											   style="border: 1px solid #3d88d3 !important; transition: border-color 0.3s ease-in-out; outline: none;"
+											   onfocus="this.style.borderColor='#1b84ff';"
+											   onblur="this.style.borderColor='#3d88d3';" />
+									</div>
+									<!--end::Input group 1-->
+									<!--begin::Input group 2-->
+									<div class="fv-row mb-10 flex-fill">
+										<label class="d-flex align-items-center fs-5 fw-semibold mb-2">
+											<span class="required">First Name</span>
+											<span class="ms-1" data-bs-toggle="tooltip" title="Specify your first name">
+												<i class="ki-duotone ki-information-5 text-gray-500 fs-6"></i>
+											</span>
+										</label>
+										<input type="text" class="form-control form-control-lg form-control-solid" name="first-name" placeholder=""
+											   style="border: 1px solid #3d88d3 !important; transition: border-color 0.3s ease-in-out; outline: none;"
+											   onfocus="this.style.borderColor='#1b84ff';"
+											   onblur="this.style.borderColor='#3d88d3';" />
+									</div>
+									<!--end::Input group 2-->
+								</div>
+								<!--end::Row 1-->
+								<!--begin::Row 2-->
+								<div class="d-flex w-100 gap-5">
+									<!--begin::Input group 3-->
+									<div class="fv-row mb-10 flex-fill">
+										<label class="d-flex align-items-center fs-5 fw-semibold mb-2">
+											<span class="required">Middle Name</span>
+											<span class="ms-1" data-bs-toggle="tooltip" title="Specify your middle name">
+												<i class="ki-duotone ki-information-5 text-gray-500 fs-6"></i>
+											</span>
+										</label>
+										<input type="text" class="form-control form-control-lg form-control-solid" name="middle-name" placeholder=""
+											   style="border: 1px solid #3d88d3 !important; transition: border-color 0.3s ease-in-out; outline: none;"
+											   onfocus="this.style.borderColor='#1b84ff';"
+											   onblur="this.style.borderColor='#3d88d3';" />
+									</div>
+									<!--end::Input group 3-->
+									<!--begin::Input group 4-->
+									<div class="fv-row mb-10 flex-fill">
+										<label class="d-flex align-items-center fs-5 fw-semibold mb-2">
+											<span class="required">Suffix</span>
+											<span class="ms-1" data-bs-toggle="tooltip" title="Specify your suffix Ex. JR, SR, III">
+												<i class="ki-duotone ki-information-5 text-gray-500 fs-6"></i>
+											</span>
+										</label>
+										<input type="text" class="form-control form-control-lg form-control-solid" name="suffix" placeholder=""
+											   style="border: 1px solid #3d88d3 !important; transition: border-color 0.3s ease-in-out; outline: none;"
+											   onfocus="this.style.borderColor='#1b84ff';"
+											   onblur="this.style.borderColor='#3d88d3';" />
+									</div>
+									<!--end::Input group 4-->
+								</div>
+								<!--end::Row 2-->
+								<!--begin::Row 3-->
+								<div class="d-flex w-100 gap-5">
+									<!--begin::Input group 4-->
+									<div class="fv-row mb-10 flex-fill">
+										<label class="d-flex align-items-center fs-5 fw-semibold mb-2">
+											<span class="required">Age</span>
+											<span class="ms-1" data-bs-toggle="tooltip" title="Specify your age">
+												<i class="ki-duotone ki-information-5 text-gray-500 fs-6"></i>
+											</span>
+										</label>
+										<input type="text" class="form-control form-control-lg form-control-solid" name="age" placeholder=""
+											   style="border: 1px solid #3d88d3 !important; transition: border-color 0.3s ease-in-out; outline: none;"
+											   onfocus="this.style.borderColor='#1b84ff';"
+											   onblur="this.style.borderColor='#3d88d3';" />
+									</div>
+									<!--end::Input group 4-->
+									<!--begin::Input group 2-->
+									<!--begin::Input group for Gender-->
+									<div class="fv-row mb-10 flex-fill">
+										<label class="d-flex align-items-center fs-5 fw-semibold mb-2">
+											<span class="required">Gender</span>
+											<span class="ms-1" data-bs-toggle="tooltip" title="Specify your gender">
+												<i class="ki-duotone ki-information-5 text-gray-500 fs-6"></i>
+											</span>
+										</label>
+										<select id="kt_unitassign" name="unitassign" class="form-control form-control-lg form-control-solid"
+												data-kt-select2="true" data-allow-clear="true" data-kt-user-table-filter="select_unitassign"
+												data-hide-search="true"
+												style="border: 1px solid #3d88d3 !important; transition: border-color 0.3s ease-in-out; outline: none;"
+												onfocus="this.style.borderColor='#1b84ff';"
+												onblur="this.style.borderColor='#3d88d3';">
+											<option></option>
+											<option value="1">Male</option>
+											<option value="2">Female</option>
+										</select>
+									</div>
+									<!--end::Input group for Gender-->
+									<!--end::Input group 2-->
+								</div>
+								<!--end::Row 3-->
+								<!--begin::Row 4-->
+								<div class="d-flex w-100 gap-5">
+									<!--begin::Input group 3-->
+									<div class="fv-row mb-10 flex-fill">
+										<label class="d-flex align-items-center fs-5 fw-semibold mb-2">
+											<span class="required">Email Address</span>
+											<span class="ms-1" data-bs-toggle="tooltip" title="Specify your email address">
+												<i class="ki-duotone ki-information-5 text-gray-500 fs-6"></i>
+											</span>
+										</label>
+										<input type="text" class="form-control form-control-lg form-control-solid" name="email" placeholder=""
+											   style="border: 1px solid #3d88d3 !important; transition: border-color 0.3s ease-in-out; outline: none;"
+											   onfocus="this.style.borderColor='#1b84ff';"
+											   onblur="this.style.borderColor='#3d88d3';" />
+									</div>
+									<!--end::Input group 3-->
+									<!--begin::Input group 4-->
+									<div class="fv-row mb-10 flex-fill">
+										<label class="d-flex align-items-center fs-5 fw-semibold mb-2">
+											<span class="required">Contact Number</span>
+											<span class="ms-1" data-bs-toggle="tooltip" title="Specify your contact number">
+												<i class="ki-duotone ki-information-5 text-gray-500 fs-6"></i>
+											</span>
+										</label>
+										<input type="text" class="form-control form-control-lg form-control-solid" name="contact" placeholder=""
+											   style="border: 1px solid #3d88d3 !important; transition: border-color 0.3s ease-in-out; outline: none;"
+											   onfocus="this.style.borderColor='#1b84ff';"
+											   onblur="this.style.borderColor='#3d88d3';" />
+									</div>
+									<!--end::Input group 4-->
+								</div>
+								<!--end::Row 4-->
+							</div>
+							<!--end::Input group wrapper-->
+							<!--end::Input group wrapper-->
+						</div>
+					</div>
+					<!--end::Step 1-->
+					<!--begin::Step 2-->
+					<div data-kt-stepper-element="content">
+						<div class="w-100">
+							<!--begin::Input group-->
+							<!--end::Input group-->
+						</div>
+					</div>
+					<!--end::Step 2-->
+					<!--begin::Step 3-->
+					<div data-kt-stepper-element="content">
+						<div class="w-100">
+							<!--begin::Input group-->
+							<!--end::Input group-->
+						</div>
+					</div>
+					<!--end::Step 3-->
+					<!--begin::Step 4-->
+					<div data-kt-stepper-element="content">
+						<div class="w-100 text-center">
+							<!--begin::Heading-->
+							<h1 class="fw-bold text-gray-900 mb-3">Done!</h1>
+							<!--end::Heading-->
+							<!--begin::Description-->
+							<div class="text-muted fw-semibold fs-3">Submit your application.</div>
+							<!--end::Description-->
+							<!--begin::Illustration-->
+							<div class="text-center px-4 py-15">
+								<img src="assets/media/illustrations/sigma-1/9.png" alt="" class="mw-100 mh-300px" />
+							</div>
+							<!--end::Illustration-->
+						</div>
+					</div>
+					<!--end::Step 4-->
+					<!--begin::Actions-->
+					<div class="d-flex flex-stack pt-10">
+						<!--begin::Wrapper-->
+						<div class="me-2">
+							<button type="button" class="btn btn-lg btn-light-primary me-3" data-kt-stepper-action="previous">
+								<i class="ki-duotone ki-arrow-left fs-3 me-1">
+									<span class="path1"></span>
+									<span class="path2"></span>
+								</i>Back
+							</button>
+						</div>
+						<!--end::Wrapper-->
+						<!--begin::Wrapper-->
+						<div>
+							<button type="button" class="btn btn-lg btn-primary" data-kt-stepper-action="submit">
+								<span class="indicator-label">
+									Submit
+									<i class="ki-duotone ki-arrow-right fs-3 ms-2 me-0">
+										<span class="path1"></span>
+										<span class="path2"></span>
+									</i>
+								</span>
+								<span class="indicator-progress">
+									Please wait...
+									<span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+								</span>
+							</button>
+							<button type="button" class="btn btn-lg btn-primary" data-kt-stepper-action="next">
+								Continue
+								<i class="ki-duotone ki-arrow-right fs-3 ms-1 me-0">
+									<span class="path1"></span>
+									<span class="path2"></span>
+								</i>
+							</button>
+						</div>
+						<!--end::Wrapper-->
+					</div>
+					<!--end::Actions-->
+				</form>
+				<!--end::Form-->
+			</div>
+			<!--end::Content-->
+		</div>
+		<!--end::Stepper-->
+	</div>
+	<!--end::Content container-->
+</div>
+<!--end::Content-->
