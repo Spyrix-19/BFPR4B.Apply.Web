@@ -92,13 +92,82 @@
 					</div>
 					<!--end::Step 3-->
 					<!--begin::Step 4-->
-					<div class="stepper-item mark-completed" data-kt-stepper-element="nav">
+					<div class="stepper-item" data-kt-stepper-element="nav">
 						<!--begin::Wrapper-->
 						<div class="stepper-wrapper">
 							<!--begin::Icon-->
 							<div class="stepper-icon w-40px h-40px">
 								<i class="ki-duotone ki-check stepper-check fs-2"></i>
 								<span class="stepper-number">4</span>
+							</div>
+							<!--end::Icon-->
+							<!--begin::Label-->
+							<div class="stepper-label">
+								<h3 class="stepper-title">Upload</h3>
+								<div class="stepper-desc">Upload Clearances</div>
+							</div>
+							<!--end::Label-->
+						</div>
+						<!--end::Wrapper-->
+						<!--begin::Line-->
+						<div class="stepper-line h-40px"></div>
+						<!--end::Line-->
+					</div>
+					<!--end::Step 4-->
+					<!--begin::Step 5-->
+					<div class="stepper-item" data-kt-stepper-element="nav">
+						<!--begin::Wrapper-->
+						<div class="stepper-wrapper">
+							<!--begin::Icon-->
+							<div class="stepper-icon w-40px h-40px">
+								<i class="ki-duotone ki-check stepper-check fs-2"></i>
+								<span class="stepper-number">5</span>
+							</div>
+							<!--end::Icon-->
+							<!--begin::Label-->
+							<div class="stepper-label">
+								<h3 class="stepper-title">Upload</h3>
+								<div class="stepper-desc">Upload Medical Clearances</div>
+							</div>
+							<!--end::Label-->
+						</div>
+						<!--end::Wrapper-->
+						<!--begin::Line-->
+						<div class="stepper-line h-40px"></div>
+						<!--end::Line-->
+					</div>
+					<!--end::Step 5-->
+					<!--begin::Step 6-->
+					<div class="stepper-item" data-kt-stepper-element="nav">
+						<!--begin::Wrapper-->
+						<div class="stepper-wrapper">
+							<!--begin::Icon-->
+							<div class="stepper-icon w-40px h-40px">
+								<i class="ki-duotone ki-check stepper-check fs-2"></i>
+								<span class="stepper-number">6</span>
+							</div>
+							<!--end::Icon-->
+							<!--begin::Label-->
+							<div class="stepper-label">
+								<h3 class="stepper-title">Upload</h3>
+								<div class="stepper-desc">Upload Government Document</div>
+							</div>
+							<!--end::Label-->
+						</div>
+						<!--end::Wrapper-->
+						<!--begin::Line-->
+						<div class="stepper-line h-40px"></div>
+						<!--end::Line-->
+					</div>
+					<!--end::Step 6-->
+					<!--begin::Step 7-->
+					<div class="stepper-item mark-completed" data-kt-stepper-element="nav">
+						<!--begin::Wrapper-->
+						<div class="stepper-wrapper">
+							<!--begin::Icon-->
+							<div class="stepper-icon w-40px h-40px">
+								<i class="ki-duotone ki-check stepper-check fs-2"></i>
+								<span class="stepper-number">7</span>
 							</div>
 							<!--end::Icon-->
 							<!--begin::Label-->
@@ -110,7 +179,7 @@
 						</div>
 						<!--end::Wrapper-->
 					</div>
-					<!--end::Step 4-->
+					<!--end::Step 7-->
 				</div>
 				<!--end::Nav-->
 			</div>
@@ -191,168 +260,515 @@
 								</div>
 								<!--end::Image input wrapper-->
 							</div>
-							<!--end::Image Profile-->
-							<!--begin::Input group wrapper-->
-							<div class="d-flex flex-wrap">
-								<!--begin::Row 1-->
-								<div class="d-flex w-100 gap-5">
-									<!--begin::Input group 1-->
-									<div class="fv-row mb-10 flex-fill">
-										<label class="d-flex align-items-center fs-5 fw-semibold mb-2">
+							<!--end::Image Profile-->							
+							<!--begin::Row-->
+							<div class="row row-cols-1 row-cols-sm-2 row-cols-md-1 row-cols-lg-2">
+								<!--begin::Col-->
+								<div class="col">
+									<!--begin::Input group-->
+									<div class="fv-row mb-3">
+										<!--begin::Label-->
+										<label class="fs-6 fw-semibold form-label mt-3">
 											<span class="required">Last Name</span>
-											<span class="ms-1" data-bs-toggle="tooltip" title="Specify your last name">
-												<i class="ki-duotone ki-information-5 text-gray-500 fs-6"></i>
+											<span class="ms-1" data-bs-toggle="tooltip" title="Enter the your lastname.">
+												<i class="ki-duotone ki-information fs-7">
+													<span class="path1"></span>
+													<span class="path2"></span>
+													<span class="path3"></span>
+												</i>
 											</span>
 										</label>
-										<input type="text" class="form-control form-control-lg form-control-solid" name="last-name" placeholder=""
-											   style="border: 1px solid #3d88d3 !important; transition: border-color 0.3s ease-in-out; outline: none;"
-											   onfocus="this.style.borderColor='#1b84ff';"
-											   onblur="this.style.borderColor='#3d88d3';" />
+										<!--end::Label-->
+										<!--begin::Input-->
+										<input type="text" placeholder="Last Name" class="form-control bg-transparent border border-primary border-hover border-active active" name="lastname" id="kt_lastname" autocomplete="off" value="" />
+										<!--end::Input-->
 									</div>
-									<!--end::Input group 1-->
-									<!--begin::Input group 2-->
-									<div class="fv-row mb-10 flex-fill">
-										<label class="d-flex align-items-center fs-5 fw-semibold mb-2">
+									<!--end::Input group-->
+								</div>
+								<!--end::Col-->
+								<!--begin::Col-->
+								<div class="col">
+									<!--begin::Input group-->
+									<div class="fv-row mb-3">
+										<!--begin::Label-->
+										<label class="fs-6 fw-semibold form-label mt-3">
 											<span class="required">First Name</span>
-											<span class="ms-1" data-bs-toggle="tooltip" title="Specify your first name">
-												<i class="ki-duotone ki-information-5 text-gray-500 fs-6"></i>
+											<span class="ms-1" data-bs-toggle="tooltip" title="Enter the your firstname.">
+												<i class="ki-duotone ki-information fs-7">
+													<span class="path1"></span>
+													<span class="path2"></span>
+													<span class="path3"></span>
+												</i>
 											</span>
 										</label>
-										<input type="text" class="form-control form-control-lg form-control-solid" name="first-name" placeholder=""
-											   style="border: 1px solid #3d88d3 !important; transition: border-color 0.3s ease-in-out; outline: none;"
-											   onfocus="this.style.borderColor='#1b84ff';"
-											   onblur="this.style.borderColor='#3d88d3';" />
+										<!--end::Label-->
+										<!--begin::Input-->
+										<input type="text" placeholder="First Name" class="form-control bg-transparent border border-primary border-hover border-active active" name="firstname" id="kt_firstname" autocomplete="off" value="" />
+										<!--end::Input-->
 									</div>
-									<!--end::Input group 2-->
+									<!--end::Input group-->
 								</div>
-								<!--end::Row 1-->
-								<!--begin::Row 2-->
-								<div class="d-flex w-100 gap-5">
-									<!--begin::Input group 3-->
-									<div class="fv-row mb-10 flex-fill">
-										<label class="d-flex align-items-center fs-5 fw-semibold mb-2">
-											<span class="required">Middle Name</span>
-											<span class="ms-1" data-bs-toggle="tooltip" title="Specify your middle name">
-												<i class="ki-duotone ki-information-5 text-gray-500 fs-6"></i>
-											</span>
-										</label>
-										<input type="text" class="form-control form-control-lg form-control-solid" name="middle-name" placeholder=""
-											   style="border: 1px solid #3d88d3 !important; transition: border-color 0.3s ease-in-out; outline: none;"
-											   onfocus="this.style.borderColor='#1b84ff';"
-											   onblur="this.style.borderColor='#3d88d3';" />
-									</div>
-									<!--end::Input group 3-->
-									<!--begin::Input group 4-->
-									<div class="fv-row mb-10 flex-fill">
-										<label class="d-flex align-items-center fs-5 fw-semibold mb-2">
-											<span class="required">Suffix</span>
-											<span class="ms-1" data-bs-toggle="tooltip" title="Specify your suffix Ex. JR, SR, III">
-												<i class="ki-duotone ki-information-5 text-gray-500 fs-6"></i>
-											</span>
-										</label>
-										<input type="text" class="form-control form-control-lg form-control-solid" name="suffix" placeholder=""
-											   style="border: 1px solid #3d88d3 !important; transition: border-color 0.3s ease-in-out; outline: none;"
-											   onfocus="this.style.borderColor='#1b84ff';"
-											   onblur="this.style.borderColor='#3d88d3';" />
-									</div>
-									<!--end::Input group 4-->
-								</div>
-								<!--end::Row 2-->
-								<!--begin::Row 3-->
-								<div class="d-flex w-100 gap-5">
-									<!--begin::Input group 4-->
-									<div class="fv-row mb-10 flex-fill">
-										<label class="d-flex align-items-center fs-5 fw-semibold mb-2">
-											<span class="required">Age</span>
-											<span class="ms-1" data-bs-toggle="tooltip" title="Specify your age">
-												<i class="ki-duotone ki-information-5 text-gray-500 fs-6"></i>
-											</span>
-										</label>
-										<input type="text" class="form-control form-control-lg form-control-solid" name="age" placeholder=""
-											   style="border: 1px solid #3d88d3 !important; transition: border-color 0.3s ease-in-out; outline: none;"
-											   onfocus="this.style.borderColor='#1b84ff';"
-											   onblur="this.style.borderColor='#3d88d3';" />
-									</div>
-									<!--end::Input group 4-->
-									<!--begin::Input group 2-->
-									<!--begin::Input group for Gender-->
-									<div class="fv-row mb-10 flex-fill">
-										<label class="d-flex align-items-center fs-5 fw-semibold mb-2">
-											<span class="required">Gender</span>
-											<span class="ms-1" data-bs-toggle="tooltip" title="Specify your gender">
-												<i class="ki-duotone ki-information-5 text-gray-500 fs-6"></i>
-											</span>
-										</label>
-										<select id="kt_unitassign" name="unitassign" class="form-control form-control-lg form-control-solid"
-												data-kt-select2="true" data-allow-clear="true" data-kt-user-table-filter="select_unitassign"
-												data-hide-search="true"
-												style="border: 1px solid #3d88d3 !important; transition: border-color 0.3s ease-in-out; outline: none;"
-												onfocus="this.style.borderColor='#1b84ff';"
-												onblur="this.style.borderColor='#3d88d3';">
-											<option></option>
-											<option value="1">Male</option>
-											<option value="2">Female</option>
-										</select>
-									</div>
-									<!--end::Input group for Gender-->
-									<!--end::Input group 2-->
-								</div>
-								<!--end::Row 3-->
-								<!--begin::Row 4-->
-								<div class="d-flex w-100 gap-5">
-									<!--begin::Input group 3-->
-									<div class="fv-row mb-10 flex-fill">
-										<label class="d-flex align-items-center fs-5 fw-semibold mb-2">
-											<span class="required">Email Address</span>
-											<span class="ms-1" data-bs-toggle="tooltip" title="Specify your email address">
-												<i class="ki-duotone ki-information-5 text-gray-500 fs-6"></i>
-											</span>
-										</label>
-										<input type="text" class="form-control form-control-lg form-control-solid" name="email" placeholder=""
-											   style="border: 1px solid #3d88d3 !important; transition: border-color 0.3s ease-in-out; outline: none;"
-											   onfocus="this.style.borderColor='#1b84ff';"
-											   onblur="this.style.borderColor='#3d88d3';" />
-									</div>
-									<!--end::Input group 3-->
-									<!--begin::Input group 4-->
-									<div class="fv-row mb-10 flex-fill">
-										<label class="d-flex align-items-center fs-5 fw-semibold mb-2">
-											<span class="required">Contact Number</span>
-											<span class="ms-1" data-bs-toggle="tooltip" title="Specify your contact number">
-												<i class="ki-duotone ki-information-5 text-gray-500 fs-6"></i>
-											</span>
-										</label>
-										<input type="text" class="form-control form-control-lg form-control-solid" name="contact" placeholder=""
-											   style="border: 1px solid #3d88d3 !important; transition: border-color 0.3s ease-in-out; outline: none;"
-											   onfocus="this.style.borderColor='#1b84ff';"
-											   onblur="this.style.borderColor='#3d88d3';" />
-									</div>
-									<!--end::Input group 4-->
-								</div>
-								<!--end::Row 4-->
+								<!--end::Col-->
 							</div>
 							<!--end::Input group wrapper-->
+							<!--begin::Row-->
+							<div class="row row-cols-1 row-cols-sm-2 row-cols-md-1 row-cols-lg-2">
+								<!--begin::Col-->
+								<div class="col">
+									<!--begin::Input group-->
+									<div class="fv-row mb-3">
+										<!--begin::Label-->
+										<label class="fs-6 fw-semibold form-label mt-3">
+											<span class="required">Middle Name</span>
+											<span class="ms-1" data-bs-toggle="tooltip" title="Enter the your middle name.">
+												<i class="ki-duotone ki-information fs-7">
+													<span class="path1"></span>
+													<span class="path2"></span>
+													<span class="path3"></span>
+												</i>
+											</span>
+										</label>
+										<!--end::Label-->
+										<!--begin::Input-->
+										<input type="text" placeholder="Middle Name" class="form-control bg-transparent border border-primary border-hover border-active active" name="middlename" id="kt_middlename" autocomplete="off" value="" />
+										<!--end::Input-->
+									</div>
+									<!--end::Input group-->
+								</div>
+								<!--end::Col-->
+								<!--begin::Col-->
+								<div class="col">
+									<!--begin::Input group-->
+									<div class="fv-row mb-3">
+										<!--begin::Label-->
+										<label class="fs-6 fw-semibold form-label mt-3">
+											<span class="required">Suffix</span>
+											<span class="ms-1" data-bs-toggle="tooltip" title="Enter the your suffix [Ex. JR, SR, II].">
+												<i class="ki-duotone ki-information fs-7">
+													<span class="path1"></span>
+													<span class="path2"></span>
+													<span class="path3"></span>
+												</i>
+											</span>
+										</label>
+										<!--end::Label-->
+										<!--begin::Input-->
+										<input type="text" placeholder="Suffix" class="form-control bg-transparent border border-primary border-hover border-active active" name="suffix" id="kt_suffix" autocomplete="off" value="" />
+										<!--end::Input-->
+									</div>
+									<!--end::Input group-->
+								</div>
+								<!--end::Col-->
+							</div>
 							<!--end::Input group wrapper-->
+							<!--begin::Row-->
+							<div class="row row-cols-1 row-cols-sm-2 row-cols-md-1 row-cols-lg-2">
+								<!--begin::Col-->
+								<div class="col">
+									<!--begin::Input group-->
+									<div class="fv-row mb-3">
+										<!--begin::Label-->
+										<label class="fs-6 fw-semibold form-label mt-3">
+											<span class="required">Email Address</span>
+											<span class="ms-1" data-bs-toggle="tooltip" title="Enter the your active email address.">
+												<i class="ki-duotone ki-information fs-7">
+													<span class="path1"></span>
+													<span class="path2"></span>
+													<span class="path3"></span>
+												</i>
+											</span>
+										</label>
+										<!--end::Label-->
+										<!--begin::Input-->
+										<input type="text" placeholder="example@gmail.com" class="form-control bg-transparent border border-primary border-hover border-active active" name="emailaddress" id="kt_emailaddress" autocomplete="off" value="" />
+										<!--end::Input-->
+									</div>
+									<!--end::Input group-->
+								</div>
+								<!--end::Col-->
+								<!--begin::Col-->
+								<div class="col">
+									<!--begin::Input group-->
+									<div class="fv-row mb-3">
+										<!--begin::Label-->
+										<label class="fs-6 fw-semibold form-label mt-3">
+											<span class="required">Contact Number</span>
+											<span class="ms-1" data-bs-toggle="tooltip" title="Enter the your active contact number.">
+												<i class="ki-duotone ki-information fs-7">
+													<span class="path1"></span>
+													<span class="path2"></span>
+													<span class="path3"></span>
+												</i>
+											</span>
+										</label>
+										<!--end::Label-->
+										<!--begin::Input-->
+										<input type="tel" placeholder="Contact Number" class="form-control bg-transparent border border-primary border-hover border-active active" name="contactnumber" id="kt_contactnumber" autocomplete="off" value="" pattern="[0-9]*" />
+										<!--end::Input-->
+									</div>
+									<!--end::Input group-->
+								</div>
+								<!--end::Col-->
+							</div>
+							<!--end::Input group wrapper-->
+							<!--begin::Row-->
+							<div class="row row-cols-1 row-cols-sm-2 row-cols-md-1 row-cols-lg-2">
+								<!--begin::Col-->
+								<div class="col">
+									<!--begin::Input group-->
+									<div class="fv-row mb-3">
+										<!--begin::Label-->
+										<label class="fs-6 fw-semibold form-label mt-3">
+											<span class="required">Age</span>
+											<span class="ms-1" data-bs-toggle="tooltip" title="Enter the your age.">
+												<i class="ki-duotone ki-information fs-7">
+													<span class="path1"></span>
+													<span class="path2"></span>
+													<span class="path3"></span>
+												</i>
+											</span>
+										</label>
+										<!--end::Label-->
+										<!--begin::Input-->
+										<input type="text" placeholder="Age" class="form-control bg-transparent border border-primary border-hover border-active active" name="age" id="kt_age" autocomplete="off" value="" />
+										<!--end::Input-->
+									</div>
+									<!--end::Input group-->
+								</div>
+								<!--end::Col-->
+								<!--begin::Col-->
+								<div class="col">
+									<!--begin::Input group-->
+									<div class="fv-row mb-3">
+										<!--begin::Label-->
+										<label class="fs-6 fw-semibold form-label mt-3">
+											<span class="required">Gender</span>
+											<span class="ms-1" data-bs-toggle="tooltip" title="Select your Gender.">
+												<i class="ki-duotone ki-information fs-7">
+													<span class="path1"></span>
+													<span class="path2"></span>
+													<span class="path3"></span>
+												</i>
+											</span>
+										</label>
+										<!--end::Label-->
+										<!--end::Label-->
+										<div class="w-100">
+											<!--begin::Select2-->
+											<select id="kt_gender" name="gender" class="form-select fw-bold bg-transparent border border-primary border-hover border-active active" data-kt-select2="true" data-placeholder="Select Gender" data-allow-clear="true" data-kt-apply-table-filter="select_age" data-hide-search="true">
+												<option></option>
+												<option value="1">Male</option>
+												<option value="2">Female</option>
+											</select>
+											<!--end::Select2-->
+										</div>
+									</div>
+									<!--end::Input group-->
+								</div>
+								<!--end::Col-->
+							</div>
+							<!--end::Input group wrapper-->
+							<!--begin::Input group-->
+							<div class="fv-row mb-3">
+								<!--begin::Label-->
+								<label class="fs-6 fw-semibold form-label mt-3">
+									<span class="required">Course</span>
+									<span class="ms-1" data-bs-toggle="tooltip" title="Select your Course.">
+										<i class="ki-duotone ki-information fs-7">
+											<span class="path1"></span>
+											<span class="path2"></span>
+											<span class="path3"></span>
+										</i>
+									</span>
+								</label>
+								<!--end::Label-->
+								<!--end::Label-->
+								<div class="w-100">
+									<!--begin::Select2-->
+									<select id="kt_course" name="course" class="form-select fw-bold bg-transparent border border-primary border-hover border-active active" data-dropdown-parent="#kt_modal_create_app_form" data-kt-select2="true" data-placeholder="Select Course" data-allow-clear="true" data-kt-apply-table-filter="select_age" data-hide-search="false">
+										<option></option>
+										</select>
+									<!--end::Select2-->
+								</div>
+							</div>
+							<!--end::Input group-->
 						</div>
 					</div>
 					<!--end::Step 1-->
 					<!--begin::Step 2-->
 					<div data-kt-stepper-element="content">
 						<div class="w-100">
-							<!--begin::Input group-->
-							<!--end::Input group-->
+							<!-- Present Address -->
+							<h2 class="fs-5 fw-bold mb-3">Present Address</h2>
+							<!--begin::Input group for Present Address-->
+							<div class="fv-row mb-3">
+								<label class="fs-6 fw-semibold form-label mt-3">
+									<span class="required">Street Address</span>
+									<span class="ms-1" data-bs-toggle="tooltip" title="Enter your present address [House/Block/Lot No./Street Address].">
+										<i class="ki-duotone ki-information fs-7"></i>
+									</span>
+								</label>
+								<input type="text" placeholder="Street Address" class="form-control bg-transparent border border-primary border-hover border-active active" name="present_streetaddress" id="present_streetaddress" autocomplete="off" value="" />
+							</div>
+
+							<div class="row">
+								<div class="col">
+									<div class="fv-row mb-3">
+										<label class="fs-6 fw-semibold form-label mt-3">
+											<span class="required">Region</span>
+											<span class="ms-1" data-bs-toggle="tooltip" title="Select your region.">
+												<i class="ki-duotone ki-information fs-7"></i>
+											</span>
+										</label>
+										<select id="present_region" name="present_region" class="form-select fw-bold bg-transparent border border-primary border-hover border-active active" data-kt-select2="true" data-placeholder="Select Region" data-allow-clear="true" data-hide-search="true">
+											<option></option>
+										</select>
+									</div>
+								</div>
+
+								<div class="col">
+									<div class="fv-row mb-3">
+										<label class="fs-6 fw-semibold form-label mt-3">
+											<span class="required">Province</span>
+											<span class="ms-1" data-bs-toggle="tooltip" title="Select your province.">
+												<i class="ki-duotone ki-information fs-7"></i>
+											</span>
+										</label>
+										<select id="present_province" name="present_province" class="form-select fw-bold bg-transparent border border-primary border-hover border-active active" data-kt-select2="true" data-placeholder="Select Province" data-allow-clear="true" data-hide-search="true">
+											<option></option>
+										</select>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col">
+									<div class="fv-row mb-3">
+										<label class="fs-6 fw-semibold form-label mt-3">
+											<span class="required">City</span>
+											<span class="ms-1" data-bs-toggle="tooltip" title="Select your city.">
+												<i class="ki-duotone ki-information fs-7"></i>
+											</span>
+										</label>
+										<select id="present_city" name="present_city" class="form-select fw-bold bg-transparent border border-primary border-hover border-active active" data-kt-select2="true" data-placeholder="Select City" data-allow-clear="true" data-hide-search="true">
+											<option></option>
+										</select>
+									</div>
+								</div>
+
+								<div class="col">
+									<div class="fv-row mb-3">
+										<label class="fs-6 fw-semibold form-label mt-3">
+											<span class="required">Barangay</span>
+											<span class="ms-1" data-bs-toggle="tooltip" title="Select your barangay.">
+												<i class="ki-duotone ki-information fs-7"></i>
+											</span>
+										</label>
+										<select id="present_barangay" name="present_barangay" class="form-select fw-bold bg-transparent border border-primary border-hover border-active active" data-kt-select2="true" data-placeholder="Select Barangay" data-allow-clear="true" data-hide-search="true">
+											<option></option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<!--end::Input group for Present Address-->
+							<!--begin::Toggle Switch for Same as Present Address-->
+							<div class="form-check form-switch mb-10">
+								<input class="form-check-input" type="checkbox" id="sameAsPresentAddress">
+								<label class="form-check-label" for="sameAsPresentAddress">Same as Present Address</label>
+							</div>
+
+							<!-- Permanent Address -->
+							<div id="permanentAddressSection">
+								<h2 class="fs-5 fw-bold mb-3">Permanent Address</h2>
+								<!--begin::Input group for Permanent Address-->
+								<div class="fv-row mb-3">
+									<label class="fs-6 fw-semibold form-label mt-3">
+										<span class="required">Street Address</span>
+										<span class="ms-1" data-bs-toggle="tooltip" title="Enter your permanent address [House/Block/Lot No./Street Address].">
+											<i class="ki-duotone ki-information fs-7"></i>
+										</span>
+									</label>
+									<input type="text" placeholder="Street Address" class="form-control bg-transparent border border-primary border-hover border-active active" name="permanent_streetaddress" id="permanent_streetaddress" autocomplete="off" value="" />
+								</div>
+
+								<div class="row">
+									<div class="col">
+										<div class="fv-row mb-3">
+											<label class="fs-6 fw-semibold form-label mt-3">
+												<span class="required">Region</span>
+												<span class="ms-1" data-bs-toggle="tooltip" title="Select your region.">
+													<i class="ki-duotone ki-information fs-7"></i>
+												</span>
+											</label>
+											<select id="permanent_region" name="permanent_region" class="form-select fw-bold bg-transparent border border-primary border-hover border-active active" data-kt-select2="true" data-placeholder="Select Region" data-allow-clear="true" data-hide-search="true">
+												<option></option>
+											</select>
+										</div>
+									</div>
+
+									<div class="col">
+										<div class="fv-row mb-3">
+											<label class="fs-6 fw-semibold form-label mt-3">
+												<span class="required">Province</span>
+												<span class="ms-1" data-bs-toggle="tooltip" title="Select your province.">
+													<i class="ki-duotone ki-information fs-7"></i>
+												</span>
+											</label>
+											<select id="permanent_province" name="permanent_province" class="form-select fw-bold bg-transparent border border-primary border-hover border-active active" data-kt-select2="true" data-placeholder="Select Province" data-allow-clear="true" data-hide-search="true">
+												<option></option>
+											</select>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col">
+										<div class="fv-row mb-3">
+											<label class="fs-6 fw-semibold form-label mt-3">
+												<span class="required">City</span>
+												<span class="ms-1" data-bs-toggle="tooltip" title="Select your city.">
+													<i class="ki-duotone ki-information fs-7"></i>
+												</span>
+											</label>
+											<select id="permanent_city" name="permanent_city" class="form-select fw-bold bg-transparent border border-primary border-hover border-active active" data-kt-select2="true" data-placeholder="Select City" data-allow-clear="true" data-hide-search="true">
+												<option></option>
+											</select>
+										</div>
+									</div>
+
+									<div class="col">
+										<div class="fv-row mb-3">
+											<label class="fs-6 fw-semibold form-label mt-3">
+												<span class="required">Barangay</span>
+												<span class="ms-1" data-bs-toggle="tooltip" title="Select your barangay.">
+													<i class="ki-duotone ki-information fs-7"></i>
+												</span>
+											</label>
+											<select id="permanent_barangay" name="permanent_barangay" class="form-select fw-bold bg-transparent border border-primary border-hover border-active active" data-kt-select2="true" data-placeholder="Select Barangay" data-allow-clear="true" data-hide-search="true">
+												<option></option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--end::Input group for Permanent Address-->
 						</div>
 					</div>
 					<!--end::Step 2-->
 					<!--begin::Step 3-->
 					<div data-kt-stepper-element="content">
 						<div class="w-100">
-							<!--begin::Input group-->
-							<!--end::Input group-->
+							<h3 class="stepper-title mb-10">Upload Documents</h3>
+							<div class="form-group mb-5">
+								<label for="kt_appletter" class="required">Application Letter - [PDF]</label>
+								<input type="file" class="form-control" name="appletter" id="kt_appletter" accept="application/pdf" required>
+							</div>
+							<div class="form-group mb-5">
+								<label for="kt_pds" class="required">Personal Data Sheet (PDS) - [XLS]</label>
+								<input type="file" class="form-control" name="pds" id="kt_pds" accept=".xlsx, .xls" required>
+							</div>
+							<div class="form-group mb-5">
+								<label for="kt_eligibility" class="required">Eligibility - [PDF]</label>
+								<input type="file" class="form-control" name="eligibility" id="kt_eligibility" accept="application/pdf" required>
+							</div>
+							<div class="form-group mb-5">
+								<label for="kt_training" class="required">Training - [PDF]</label>
+								<input type="file" class="form-control" name="training" id="kt_training" accept="application/pdf" required>
+							</div>
+							<div class="form-group mb-5">
+								<label for="kt_tor" class="required">Transcript of Record (TOR) - [PDF]</label>
+								<input type="file" class="form-control" name="tor" id="kt_tor" accept="application/pdf" required>
+							</div>
+							<div class="form-group mb-5">
+								<label for="kt_birthcert" class="required">PSA Birth Certificate - [PDF]</label>
+								<input type="file" class="form-control" name="birthcert" id="kt_birthcert" accept="application/pdf" required>
+							</div>
+							<div class="form-group mb-5">
+								<label for="kt_marriagecert" class="required">PSA Marriage Certificate - [PDF]</label>
+								<input type="file" class="form-control" name="marriagecert" id="kt_marriagecert" accept="application/pdf" required>
+							</div>							
+							<div class="form-group mb-5">
+								<label for="kt_agewaiver" class="required">Age Waiver - [PDF]</label>
+								<input type="file" class="form-control" name="agewaiver" id="kt_agewaiver" accept="application/pdf" required>
+							</div>							
 						</div>
 					</div>
 					<!--end::Step 3-->
 					<!--begin::Step 4-->
+					<div data-kt-stepper-element="content">
+						<div class="w-100">
+							<h3 class="stepper-title mb-10">Upload Documents</h3>							
+							<div class="form-group mb-5">
+								<label for="kt_barangayclearance" class="required">Barangay Clearance - [PDF]</label>
+								<input type="file" class="form-control" name="barangayclearance" id="kt_barangayclearance" accept="application/pdf" required>
+							</div>
+							<div class="form-group mb-5">
+								<label for="kt_mayorclearance" class="required">Mayor's Clearance - [PDF]</label>
+								<input type="file" class="form-control" name="mayorclearance" id="kt_mayorclearance" accept="application/pdf" required>
+							</div>
+							<div class="form-group mb-5">
+								<label for="kt_mtc" class="required">Municipal Trial Court - [PDF]</label>
+								<input type="file" class="form-control" name="mtc" id="kt_mtc" accept="application/pdf" required>
+							</div>
+							<div class="form-group mb-5">
+								<label for="kt_rtc" class="required">Regional Trial Court - [PDF]</label>
+								<input type="file" class="form-control" name="rtc" id="kt_rtc" accept="application/pdf" required>
+							</div>
+							<div class="form-group mb-5">
+								<label for="kt_policeclearance" class="required">Police Clearance - [PDF]</label>
+								<input type="file" class="form-control" name="policeclearance" id="kt_policeclearance" accept="application/pdf" required>
+							</div>
+							<div class="form-group mb-5">
+								<label for="kt_nbiclearance" class="required">NBI Clearance - [PDF]</label>
+								<input type="file" class="form-control" name="nbiclearance" id="kt_nbiclearance" accept="application/pdf" required>
+							</div>
+							<br /><br /><br />
+						</div>
+					</div>
+					<!--end::Step 4-->
+					<!--begin::Step 5-->
+					<div data-kt-stepper-element="content">
+						<div class="w-100">
+							<h3 class="stepper-title mb-10">Upload Documents</h3>
+							<div class="form-group mb-5">
+								<label for="kt_ecg" class="required">ECG - [PDF]</label>
+								<input type="file" class="form-control" name="ecg" id="kt_ecg" accept="application/pdf" required>
+							</div>
+							<div class="form-group mb-5">
+								<label for="kt_pregtest" class="required">Pregnancy Test (for female only) - [PDF]</label>
+								<input type="file" class="form-control" name="pregtest" id="kt_pregtest" accept="application/pdf" required>
+							</div>
+						</div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+					</div>					
+					<!--end::Step 5-->
+					<!--begin::Step 6-->
+					<div data-kt-stepper-element="content">
+						<div class="w-100">
+							<h3 class="stepper-title mb-10">Upload Documents</h3>
+							<div class="form-group mb-5">
+								<label for="kt_philhealth" class="required">PhilHealth - [PDF]</label>
+								<input type="file" class="form-control" name="philhealth" id="kt_philhealth" accept="application/pdf" required>
+							</div>
+							<div class="form-group mb-5">
+								<label for="kt_pagibig" class="required">Pag-Ibig - [PDF]</label>
+								<input type="file" class="form-control" name="pagibig" id="kt_pagibig" accept="application/pdf" required>
+							</div>
+							<div class="form-group mb-5">
+								<label for="kt_gsis" class="required">GSIS - [PDF]</label>
+								<input type="file" class="form-control" name="gsis" id="kt_gsis" accept="application/pdf" required>
+							</div>
+							<div class="form-group mb-5">
+								<label for="kt_sss" class="required">SSS - [PDF]</label>
+								<input type="file" class="form-control" name="sss" id="kt_sss" accept="application/pdf" required>
+							</div>
+							<div class="form-group mb-5">
+								<label for="kt_tin" class="required">Tax Identification Number (TIN) - [PDF]</label>
+								<input type="file" class="form-control" name="tin" id="kt_tin" accept="application/pdf" required>
+							</div><br /><br /><br /><br /><br /><br /><br />
+						</div>
+					</div>
+					<!--end::Step 6-->
+					<!--begin::Step 8-->
 					<div data-kt-stepper-element="content">
 						<div class="w-100 text-center">
 							<!--begin::Heading-->
@@ -366,9 +782,9 @@
 								<img src="assets/media/illustrations/sigma-1/9.png" alt="" class="mw-100 mh-300px" />
 							</div>
 							<!--end::Illustration-->
-						</div>
+						</div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 					</div>
-					<!--end::Step 4-->
+					<!--end::Step 8-->
 					<!--begin::Actions-->
 					<div class="d-flex flex-stack pt-10">
 						<!--begin::Wrapper-->
